@@ -1,0 +1,123 @@
+// Alignment
+.card-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-review {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+// Cards
+.card-show {
+  background-color: #1C1B1B;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  color: #F5F5F1;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.card-no-movies p {
+  color: #F5F5F1;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+// Text
+.name-list {
+  color: #F5F5F1;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.no-movies {
+  color: #F5F5F1;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.bookmark-comment {
+  text-align: center;
+}
+
+.overview {
+  color: #acacac;
+  font-size: 0.8em;
+  margin: 10px;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+}
+
+.quote {
+  color: #c82333;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 1px #000;
+}
+
+// Rating
+.rating {
+  font-size: 1em;
+  margin-left: 10px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.star {
+  color: #c82333;
+  font-size: 0.8em;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+// Button
+.add-movie {
+  margin-bottom: 20px;
+  margin-right: 40px;
+  text-align: right;
+}
+
+.delete-bookmark {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: auto;
+}
+
+.delete-list {
+  bottom: 20px;
+  left: 20px;
+  position: fixed;
+}
+
+.heart {
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+// Layout Styles
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.title-rating {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+.hr-top {
+  margin-left: 25px;
+  margin-right: 25px;
+}

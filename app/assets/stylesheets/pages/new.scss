@@ -1,0 +1,45 @@
+h1{
+  text-align: center;
+  color: #F5F5F1;
+  margin-bottom: 20px;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #F5F5F1;
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #F5F5F1;
+  color: #F5F5F1;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #3b3535;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.new-movie-container {
+  margin-top: 40px;
+  color: #f3f323;
+}
+
+.select-movie {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.card-body h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

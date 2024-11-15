@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/lists">
+      <%= image_tag 'Wagonflix.png', alt: 'Wagonflix Logo', width: 200 %>
+    </a>
+    <div class="ml-auto">
+      <%= link_to 'New List', new_list_path, class: 'btn btn-outline-danger' %>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-card">
+  <div class="card-body">
+    <h1>Create a New List</h1>
+    <%= simple_form_for @list do |f| %>
+      <div class="name">
+        <%= f.input :name, required: true, input_html: { class: 'form-control' } %>
+      </div>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit 'Create List', class: 'btn btn-danger' %>
+    <% end %>
+  </div>
+</div>
