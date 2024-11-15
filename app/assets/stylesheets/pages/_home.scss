@@ -27,14 +27,23 @@ h1, h2 ,h5{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0 15px;
-  margin: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   border-radius: 12px;
+  margin-bottom: 25px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  width: calc(33.33% - 20px);
-  border: 1.5px solid #F5F5F1;
+  width: 540px;
+  height: 250px;
+  border: 1.5px solid #898989;
   box-sizing: border-box;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0.6;
 }
 
 /* Nom de la card*/
@@ -43,6 +52,7 @@ h1, h2 ,h5{
   text-decoration: none;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: absolute;
 }
 
 /* container et row */

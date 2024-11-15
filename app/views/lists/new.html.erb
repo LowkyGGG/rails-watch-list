@@ -14,9 +14,7 @@
   <div class="card-body">
     <h1>Create a New List</h1>
     <%= simple_form_for @list do |f| %>
-      <div class="name">
-        <%= f.input :name, required: true, input_html: { class: 'form-control' } %>
-      </div>
+      <%= f.input :name, required: true, input_html: { class: 'form-control' } %>
       <%= f.input :photo, as: :file %>
       <%= f.submit 'Create List', class: 'btn btn-danger' %>
     <% end %>
