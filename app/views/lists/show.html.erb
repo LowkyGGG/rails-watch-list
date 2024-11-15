@@ -22,17 +22,17 @@
     <% @list.bookmarks.each do |bookmark| %>
       <div class="col-md-3 mb-4">
         <div class="card-show">
-          <img src="<%= bookmark.movie.poster_url %>" class="card-img-top" alt="<%= bookmark.movie.title %> Poster">
-          <hr>
-          <div class="card-body">
+          <img src="https://image.tmdb.org/t/p/original<%= bookmark.movie.poster_url %>" class="card-img-top" alt="<%= bookmark.movie.title %> Poster">
+          <%# <hr> %>
+          <div class="contentBx">
             <h5 class="title-rating">
               <span class="title"><%= bookmark.movie.title %></span>
               <span class="rating"><strong><%= '%.1f' % bookmark.movie.rating %></strong> <i class="star fa-solid fa-star"></i></span>
             </h5>
-            <p class="overview"><%= bookmark.movie.overview %></p>
-          </div>
+            <p class="overview"><%= bookmark.movie.overview.truncate(150) %></p>
           <p class="bookmark-comment"><i class="quote fa-solid fa-quote-left"></i> <%= bookmark.comment %> <i class="quote fa-solid fa-quote-right"></i></p>
-          <%= link_to '<i class="fa-solid fa-trash-can"></i>'.html_safe, bookmark_path(bookmark), class: 'delete-bookmark btn btn-outline-danger', data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this movie?" } %>
+          <h6 class="delete-bookmark"><%= link_to '<i class="fa-solid fa-trash-can"></i>'.html_safe, bookmark_path(bookmark), class: 'delete-bookmark btn btn-outline-danger', data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this movie?" } %></h6>
+          </div>
         </div>
       </div>
     <% end %>

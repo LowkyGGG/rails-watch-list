@@ -25,14 +25,16 @@
 
   <div class="row-cards">
     <% @lists.each do |list| %>
-      <div class="card-index">
-        <% if list.photo.attached? %>
-          <%= cl_image_tag list.photo.key, class: 'card-image' %>
-        <% else %>
-          <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQDYau3Hs4-xw1i8jVSUY4BlF4FLmg8lQqg&usqp=CAU', class: 'card-image' %>
-        <% end %>
-        <%= link_to list.name.upcase, list_path(list), class: "name" %>
-      </div>
+      <%= link_to list do %>
+        <div class="card-index">
+          <% if list.photo.attached? %>
+            <%= cl_image_tag list.photo.key, class: 'card-image' %>
+          <% else %>
+            <%= image_tag 'https://preview.redd.it/no-need-to-use-javascript-anymore-v0-qcwds0h28nea1.jpg?auto=webp&s=f406921502323209c353f155143c4591e39e56c5', class: 'card-image-no-photo' %>
+          <% end %>
+          <span class="name"><%= list.name.upcase %></span>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>
